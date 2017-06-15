@@ -6,8 +6,8 @@ let ctx = canvas.getContext('2d')
 canvas.width = innerWidth
 canvas.height = innerHeight
 
-// canvas.style.cursor = 'none'
-// initial mouse location
+canvas.style.cursor = 'none'
+
 let mouse = {
   x: innerWidth / 2,
   y: innerHeight / 2
@@ -19,6 +19,7 @@ addEventListener('mousemove', e => {
   mouse.x = e.clientX
   mouse.y = e.clientY
 })
+
 addEventListener('resize', e => {
   canvas.width = innerWidth
   canvas.height = innerHeight
